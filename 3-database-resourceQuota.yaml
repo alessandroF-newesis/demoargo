@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: database-resourcequota
+  namespace: testdemo
+spec:
+  hard:
+    requests.cpu: "3"
+    requests.memory: "3Gi"
+    limits.cpu: "4"
+    limits.memory: "4Gi"
