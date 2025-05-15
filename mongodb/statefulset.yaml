@@ -47,7 +47,7 @@ spec:
   - metadata:
       name: mongo-persistent-storage
       annotations:
-        volume.beta.kubernetes.io/storage-class: "local-path"
+        volume.beta.kubernetes.io/storage-class: "crc-csi-hostpath-provisioner"
     spec:
       accessModes: [ "ReadWriteOnce" ]
       resources:
