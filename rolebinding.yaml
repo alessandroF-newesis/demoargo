@@ -1,13 +1,3 @@
-kind: Role
-apiVersion: rbac.authorization.k8s.io/v1
-metadata:
-  namespace: testdemo
-  name: mongo-pod-read
-rules:
-- apiGroups: [""]
-  resources: ["pods"]
-  verbs: ["get", "watch", "list"]
----
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
