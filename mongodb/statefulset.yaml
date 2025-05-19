@@ -8,7 +8,7 @@ spec:
     matchLabels:
       role: mongo 
   serviceName: "mongo-hlservice"
-  replicas: 3
+  replicas: 5
   template:
     metadata:
       labels:
